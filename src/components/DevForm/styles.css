@@ -1,0 +1,67 @@
+form {
+  margin-top: 30px;
+}
+
+form .input-block + .input-block {
+  margin-top: 20px;
+}
+
+form .input-group {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+form .input-group .input-block {
+  margin-top: 0;
+}
+
+form .input-block label {
+  color: #fffb;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+form .input-block input {
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  color: #fffd;
+  border: 0;
+  border-bottom: 1px solid #fff2;
+  background: #17132c;
+  transition: border ease-in .3s;
+}
+
+form .input-block input:focus {
+  border-bottom: 2px solid tomato;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  background: #17132c;
+  color: tomato;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: -2px -2px 1px 0 rgba(255, 255, 255, .1), 4px 4px 4px 0 rgba(0, 0, 0, .3);
+  transition: all ease-out .2s;
+}
+
+form button:hover,
+form button:active {
+  background: rgb(253, 125, 102);
+  color: white;
+  box-shadow: 0 0 30px 0 tomato;
+}
+
+form button:active {
+  background: tomato;
+  color: #17132c;
+}
